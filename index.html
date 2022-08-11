@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div id="background_black"></div> 
+  <header class="center">
+    <img src="images/logo.svg" alt="logo_snap" id="logo">
+    <img src="images/icon-menu.svg" alt="ico-menu" id="icon-menu">
+    <nav class="center">
+      <button id="close_nav">X</button>
+      <ul id="menu" class="container">
+        <!-- <a href="#features"> -->
+          <li id="features_menu">Features<img src="images/icon-arrow-down.svg" class="icon-arrow"></li>
+        <!-- </a> -->
+          <ul class="menu_dropdown">
+            <li><img src="images/icon-todo.svg" alt="icon-todo"> Todo List</li>
+            <li><img src="images/icon-calendar.svg" alt="icon-calendar"> Calendar</li>
+            <li><img src="images/icon-reminders.svg" alt="icon-reminders"> Reminders</li>
+            <li><img src="images/icon-planning.svg" alt="icon-"> Planning</li>
+          </ul>
+        <!-- <a href="#comp"> -->
+          <li id="company_menu">Company<img src="images/icon-arrow-down.svg" class="icon-arrow"></li>
+        <!-- </a> -->
+        <ul class="menu_dropdown" id="comp">
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Blog</li>
+        </ul>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+      <div id="btn_group">
+        <button id="login">Login</button>
+        <button id="register">Register</button>
+      </div>
+    </nav>
+    
+
+  </header>
+  
+  <main>
+
+    <div>
+      <!-- <h1><span>Make</span> remote work</h1> -->
+      <h1>Make remote work</h1>
+      <p>
+        Get your team in sync, no matter your location. 
+        Streamline processes, create team rituals, and 
+        watch productivity soar.
+      </p>
+      <button id="btn_learn">Learn more</button>
+      <br>
+      <img src="images/client-databiz.svg" alt="client-databiz">
+      <img src="images/client-audiophile.svg" alt="client-audiophile">
+      <img src="images/client-meet.svg" alt="client-meet">
+      <img src="images/client-maker.svg" alt="client-maker">
+    </div>
+    <img src="images/image-hero-mobile.png" alt="image-hero" id="img_hero">
+  </main>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="./javascript/jquery-3.6.0.js"></script>
+  <script src="./javascript/drowpdow_meny.js"></script>
+</body>
+</html>
