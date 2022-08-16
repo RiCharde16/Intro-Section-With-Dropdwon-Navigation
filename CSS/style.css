@@ -227,6 +227,9 @@ main{
         left: 150px;
         /* left: 100px; */
     }
+    .active{
+        display: block;
+    }
     p{
         direction: rtl;
         padding: 0;
@@ -291,6 +294,7 @@ main{
         /* padding: 5px; */
         margin: 35px 0px;
     }
+
     /* html{    
         margin: 0;
         padding: 0;
@@ -298,4 +302,5 @@ main{
     /* nav{
         background-color: aqua;
     } */
+    
 }
